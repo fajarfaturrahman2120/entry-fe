@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashsoft Indonesia</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins",sans-serif;
+    }
+    body {
+        line-height:1.6 ;
+        color: #333;
+    }
+
+    header,section{
+        padding: 60px 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    footer{
+        padding: 60px 20px;
+    }
+
+    h1,h2,h3{
+         margin-bottom: 15px;
+         text-align: center;
+        }
+
+   p{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .hero{
+        background: linear-gradient(120deg,#c6abff,#673499);
+        color: white;
+        padding: 100px 20px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        text-align: center;
+        padding: 80px 20px;
+        min-height: 400px; /* opsional */
+    }
+
+    .hero h1{
+        font-size: 2.8em;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .hero p{
+        font-size: 1.1em;
+        margin-bottom: 15px;
+    }
+
+    .hero .subtex{
+        max-width: 600px;
+        margin: 0 auto 25px auto;
+        line-height: 1.6px;
+        opacity: 0.9;
+    }
+
+    .hero .btn{
+         background: white;
+         color: #673499;
+         padding: 12px 24px;
+         border-radius: 8px;
+         border:none;
+         cursor: pointer;
+         font-weight: 600;
+         transition: 0,3s;
+    }
+
+    .hero .btn:hover {
+         background: #f0f0f0;
+    }
+
+    .btn{
+        background: #f0f0f0;
+       
+    }
+
+    .grid{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        margin-top: 30px;
+    }
+
+    .card{
+        background: #c6abff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0.2px 5px rgba(0,0,0.1);
+    }
+
+    .testimonial{
+        font-style: italic;
+    }
+
+    .prince-card{
+        background: #c6abff;
+        border: 1px solid #673499;
+    }
+
+    footer{
+        text-align: center;
+        background: #f8f8f8;
+        padding: 30px;
+        font-size: 0.9em;
+        color: #999;
+    }
+    /* CTA Section */
+    .cta{
+         background: #673499;
+         color: white;
+         text-align: center;
+         padding: 60px 20px;
+         margin: top;
+    }
+
+    .cta button{
+        background: white;
+        color: #673499;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+
+    .cta button:hover{
+        background: #f0f0f0;
+    }
+
+</style>
+<body>
+ <!-- 1️⃣ Hero Section -->
+        <section class="hero">
+            <h1>Flashsoft Indonesia</h1>
+            <p class="subtext">
+                Kami membantu Anda membangun solusi software dan mengembangkan talenta digital
+                melalui program pelatihan, bootcamp, dan pembelajaran interaktif.
+            </p>
+            <button class="btn">Jelajahi Program</button>
+        </section>
+ <!-- ⿢ Problem & Solution Section -->
+<section>
+    <h2>Tantangan yang Sering Dihadapi Calon Programmer</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Belajar Sendiri Tanpa Arah</h3>
+            <p>
+                Banyak pemula bingung harus mulai dari mana dan sering berhenti di tengah jalan
+                karena tidak punya panduan belajar yang jelas.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Kurang Latihan & Proyek Nyata</h3>
+            <p>
+                Materi online sering hanya teori tanpa praktek langsung, sehingga sulit
+                memahami bagaimana coding diterapkan di dunia kerja.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Tidak Punya Mentor</h3>
+            <p>
+                Tanpa bimbingan mentor berpengalaman, peserta kesulitan memperbaiki kesalahan
+                dan meningkatkan kualitas coding mereka.
+            </p>
+        </div>
+    </div>
+
+    <h2 class="solution-title">Solusi Kami</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Program Belajar Terarah</h3>
+            <p>
+                Kurikulum disusun bertahap — dari dasar hingga mahir — agar kamu tidak bingung
+                mulai dari mana.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Bimbingan Mentor Profesional</h3>
+            <p>
+                Dibimbing langsung oleh praktisi industri dan pengajar berpengalaman agar
+                belajar lebih fokus dan efektif.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Latihan & Proyek Nyata</h3>
+            <p>
+                Setiap materi disertai latihan dan proyek nyata agar kamu terbiasa dengan
+                tantangan di dunia kerja.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Komunitas & Dukungan Belajar</h3>
+            <p>
+                Bergabung dengan komunitas pembelajar aktif untuk saling berbagi pengetahuan
+                dan inspirasi.
+            </p>
+        </div>
+    </div>
+</section>
+
+    <!--  Features / Benefits -->
+    <section>
+        <h2>Keunggulan Kami</h2>
+        <div class="grid">
+            <div class="card">🚀 Belajar bisa dari nol — cocok untuk pemula tanpa pengalaman coding.</div>
+            <div class="card">💡 Materi selalu update mengikuti tren teknologi industri.</div>
+            <div class="card">🎯 Pendekatan belajar berbasis proyek (project-based learning).</div>
+            <div class="card">🤝 Akses komunitas dan mentoring pribadi dari para ahli.</div>
+        </div>
+    </section>
+
+    <!-- ⿤ Social Proof / Testimonial -->
+    <section>
+        <h2>Apa Kata Mereka?</h2>
+        <div class="grid">
+            <div class="card testimonial">
+                “Awalnya saya tidak tahu apa-apa tentang coding. Sekarang saya sudah bisa membuat website sendiri!”
+                <br>– <strong>Intan, Peserta Bootcamp Web Beginner</strong>
+            </div>
+            <div class="card testimonial">
+                “Mentornya sabar banget dan materinya mudah dipahami. Belajar di Flashsoft bikin semangat terus!”
+                <br>– <strong>Rafi, Siswa Private Coding</strong>
+            </div>
+            <div class="card testimonial">
+                “Setelah ikut kelas, saya berhasil diterima magang di startup teknologi.”
+                <br>– <strong>Dina, Alumni Live Coding React JS</strong>
+            </div>
+        </div>
+    </section>
+
+        <!-- ⿥ Pricing / Offer -->
+    <section>
+        <h2>Paket Harga</h2>
+        <div class="grid">
+            <div class="card price-card">
+                <h3>Starter</h3>
+                <p>Rp 299.000 / bulan</p>
+                <p>Fitur dasar dan support terbatas.</p>
+              <button class="btn">Pilih Paket</button>
+            </div>
+            <div class="card price-card">
+                <h3>Pro</h3>
+                <p>Rp 599.000 / bulan</p>
+                <p>Semua fitur + dukungan penuh.</p>
+             <button class="btn">Pilh Paket</button>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+</body>
+</html>
