@@ -12,13 +12,28 @@
             background: #f2f3f6;
             font-family: 'Inter', sans-serif;
         }
+        .grid{
+            grid-template-columns: 3(1fr);
+        }
         .card {
            background: #f9f9f9;
-           width: 250px;
-           height: 100px;
+            width: 200px;
            padding: 20px;
-           border-radius: 10px;
-           box-shadow: 0 10px  #6a1b9a;
+            border-radius: 12px;
+            outline: 4px solid #6a1b9a; /* outline bisa di luar border */
+        }
+
+        
+        .btn{
+            padding: 4px 18px;
+            background: #dcdcdc;      
+            color: #555;              
+            border: none;
+            border-radius: 30px;      
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;     
+           float: right;
         }
 </style>
 <body>
@@ -34,8 +49,18 @@
               yang cocok untukmu
             </p>
           
+        <div class="grid">
         <div class="card">
-            
+               <button class="btn">Reguler</button>
+               <br>
+            <p style="text-align:start; letter-spacing : 0.1em;">Private Coding -
+                    <span style="color:#bcbe34;font-weight: bolder;">
+                        Basic</span>       
+                </p>
+                 <h6 style="margin-top: 1px;">Cocok untuk yang mau belajar:</h6>   
+                  <h6>Rp: <span style="color: black; font-weight: bolder;">120.000</span>/Pertemuan</h6>
+          
+            </div>
             
         </div>
 </body>
