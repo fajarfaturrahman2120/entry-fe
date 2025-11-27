@@ -128,83 +128,82 @@
             flex-direction: column;
             gap: 12px;
         }
-        .pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
-    margin-top: 30px;
+         .grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .price-card {
+            background: white;
+            border: 2px solid #673499;
+        }
+
+
+        .text-white {
+            color: white;
+        }
+
+        .text-start {
+            text-align: left;
+        }
+        .badge-btn {
+  background: #d9d9d9;       /* abu-abu muda */
+  color: #555;               /* teks abu-abu gelap */
+  padding: 8px 26px;         /* tinggi & panjang tombol */
+  border: none;              /* tanpa border */
+  border-radius: 999px;      /* bentuk oval / kapsul */
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;       /* jarak huruf mirip gambar */
+  cursor: default;           /* sesuai tombol pasif */
+  float: right;
 }
 
-.price-card {
-    background: white;
-    border: 2px solid #e2d5f6;
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-    transition: 0.2s;
+        .feature-list {
+  font-family: system-ui, sans-serif;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
-.price-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+.feature-list .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
 }
 
-.price-card h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #222;
+.feature-list .item .icon {
+  font-size: 18px;     /* ukuran ikon */
+  margin-right: 8px;   /* jarak ikon ke teks */
 }
 
-.price {
-    font-size: 22px;
-    font-weight: 800;
-    color: #673499;
-    margin-bottom: 15px;
+        .choose-btn {
+  padding: 8px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #6a1b9a;         /* ungu teks */
+  background: #ffffff;    /* putih */
+  border: 2px solid #b085d6; /* ungu muda */
+  border-radius: 8px;     /* rounded */
+  cursor: pointer;
+  transition: 0.2s ease;
 }
 
-.price span {
-    font-size: 13px;
-    color: #777;
+.choose-btn:hover {
+  background: #f4e8ff;    /* ungu sangat muda */
 }
 
-.btn {
-    display: inline-block;
-    background: gray;
-    color: rgb(0, 0, 0);
-    padding: 10px 18px;
-    border-radius: 8px;
-    font-size: 14px;
-    margin-bottom: 15px;
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 8px;
-    font-size: 14px;
-    color: #444;
-}
-
-/* Label BASIC / ADVANCED */
-.label-basic,
-.label-advanced {
-    padding: 5px 12px;
-    border-radius: 6px;
-    font-size: 12px;
-    font-weight: 700;
-    color: rgb(0, 0, 0);
-}
-
-.label-basic {
-    background: #8e44ad;   /* ungu soft */
-}
-
-.label-advanced {
-    background: #3b0b82;   /* ungu lebih dark */
+.choose-btn:active {
+  transform: scale(0.96);
 }
 
 .contact-section {
@@ -426,162 +425,374 @@ ul li {
         </div>
     </section>
 
-    <section id="pricing" style="padding:60px 20px; font-family:'Inter', sans-serif;">
-    <p style="letter-spacing:0.1em; text-transform:uppercase; color:#673499; font-weight:700;">
-        ## PRICELIST
-    </p>
-    <h2 style="font-size:28px; font-weight:800; color:#222; margin-bottom:30px;">
-        Pilih <span style="color:#673499;">Program</span> yang cocok untukmu.
-    </h2>
+<!-- 5️⃣ Pricing / Offer -->
+    <div class="grid">
+        <!-- #1 -->
+        <div class="card price-card">
+            <button class="badge-btn">REGULER</button>
+<br>
+            <h3 class="text-start" style="margin-bottom: 0;">Private Coding - Basic</h3>
+            <p class="text-start" style="font-size: 12px;">Cocok untuk yang mau belajar</p>
+            <p style="text-align:start; font-size:10px; ">Rp :
+                  <span style="color:#000000;font-weight: bolder; font-size:30px;">
+                      120.000</span>
+                  / Pertemuan
+              </p>
+              <button class="choose-btn">Pilih Paket</button>
+              <div class="feature-list">
+  <div class="item">
+    <span class="icon">📅</span>
+    <span>1x Pertemuan</span>
+  </div>
 
-    <div class="pricing-grid">
-        
-        <!-- CARD 1 -->
-        <div class="price-card">
-            <span class="label-basic">Reguler</span>
-            <h3>Private Coding - Basic</h3>
-            <p class="price">Rp 120.000 <span>/ pertemuan</span></p>
-            <a class="btn">Pilih Paket</a>
+  <div class="item">
+    <span class="icon">🕒</span>
+    <span>Durasi belajar 120 menit</span>
+  </div>
 
-            <ul>
-                <li>Durasi 90 menit</li>
-                <li>1 Mentor 1 Murid</li>
-                <li>Materi sesuai kebutuhan</li>
-                <li>Flexible jadwal</li>
-                <li>Offline / Online</li>
-            </ul>
+  <div class="item">
+    <span class="icon">🏫</span>
+    <span>Pertemuan Offline</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">💻</span>
+    <span>Bahasa Pemrogramman (PHP, Java Dasar, Python Dasar, dll)</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">👨‍🏫</span>
+    <span>Di bimbing mentor one-on-one</span>
+  </div>
+</div>
+
+
+
         </div>
+        <!-- #2 -->
+        <div class="card price-card">
+            <button class="badge-btn">REGULER</button>
+            <br>
 
-        <!-- CARD 2 -->
-        <div class="price-card">
-            <span class="label-basic">Rguler</span>
-            <h3>Private Coding - Basic</h3>
-            <p class="price">Rp 140.000 <span>/ pertemuan</span></p>
-            <a class="btn">Pilih Paket</a>
+            <h3 class="text-start" style="margin-bottom: 0;">Private Coding - Basic</h3>
+            <p class="text-start" style="font-size: 12px;">Cocok untuk yang mau belajar</p>
+             <p style="text-align:start; font-size:10px; ">Rp :
+                  <span style="color:#000000;font-weight: bolder; font-size:30px;">
+                      140.000</span>
+                  / Pertemuan
+              </p>
+              <button class="choose-btn">Pilih Paket</button>
+              <div class="feature-list">
+  <div class="item">
+    <span class="icon">📅</span>
+    <span>1x Pertemuan</span>
+  </div>
 
-            <ul>
-                <li>Durasi 120 menit</li>
-                <li>1 Mentor 1 Murid</li>
-                <li>Materi bebas</li>
-                <li>Free konsultasi</li>
-                <li>Offline / Online</li>
-            </ul>
+  <div class="item">
+    <span class="icon">🕒</span>
+    <span>Durasi belajar 120 menit</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">🏫</span>
+    <span>Pertemuan Offline</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">💻</span>
+    <span>Bahasa Pemrogramman (PHP, Java Dasar, Python Dasar, dll)</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">👨‍🏫</span>
+    <span>Di bimbing mentor one-on-one</span>
+  </div>
+</div>
+
         </div>
+        <!-- #3 -->
+        <div class="card price-card">
+            <button class="badge-btn">REGULER</button>
+<br>
+            <h3 class="text-start" style="margin-bottom: 0;">Private Coding - Advanced</h3>
+            <p class="text-start" style="font-size: 12px;">Cocok untuk yang mau belajar</p>
+             <p style="text-align:start; font-size:10px; ">Rp :
+                  <span style="color:#000000;font-weight: bolder; font-size:30px;">
+                      150.000</span>
+                  / Pertemuan
+              </p>
+              <button class="choose-btn">Pilih Paket</button>
+              <div class="feature-list">
+  <div class="item">
+    <span class="icon">📅</span>
+    <span>1x Pertemuan</span>
+  </div>
 
-        <!-- CARD 3 -->
-        <div class="price-card">
-            <span class="label-advanced">Reguler</span>
-            <h3>Private Coding - Advanced</h3>
-            <p class="price">Rp 150.000 <span>/ pertemuan</span></p>
-            <a class="btn">Pilih Paket</a>
+  <div class="item">
+    <span class="icon">🕒</span>
+    <span>Durasi belajar 120 menit</span>
+  </div>
 
-            <ul>
-                <li>Durasi 120 menit</li>
-                <li>Expert mentor</li>
-                <li>Project-based</li>
-                <li>Mendapatkan sertifikat</li>
-                <li>Offline / Online</li>
-            </ul>
+  <div class="item">
+    <span class="icon">🏫</span>
+    <span>Pertemuan Offline</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">💻</span>
+    <span>Bahasa Pemrogramman (PHP, Java Dasar, Python Dasar, dll)</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">👨‍🏫</span>
+    <span>Di bimbing mentor one-on-one</span>
+  </div>
+</div>
+
         </div>
+        <!-- #4 -->
+        <div class="card price-card">
+            <br>
+            <button class="badge-btn">REGULER</button>
+<br>
+            <h3 class="text-start" style="margin-bottom: 0;">Private Coding - Advanced</h3>
+            <p class="text-start" style="font-size: 12px;">Cocok untuk yang mau belajar</p>
+             <p style="text-align:start; font-size:10px; ">Rp :
+                  <span style="color:#000000;font-weight: bolder; font-size:30px;">
+                      170.000</span>
+                  / Pertemuan
+              </p>
+              <button class="choose-btn">Pilih Paket</button>
+              <div class="feature-list">
+  <div class="item">
+    <span class="icon">📅</span>
+    <span>1x Pertemuan</span>
+  </div>
 
-        <!-- CARD 4 -->
-        <div class="price-card">
-            <span class="label-advanced">Reguler</span>
-            <h3>Private Coding - Advanced</h3>
-            <p class="price">Rp 170.000 <span>/ pertemuan</span></p>
-            <a class="btn">Pilih Paket</a>
+  <div class="item">
+    <span class="icon">🕒</span>
+    <span>Durasi belajar 120 menit</span>
+  </div>
 
-            <ul>
-                <li>Durasi 150 menit</li>
-                <li>Expert mentor</li>
-                <li>Belajar framework</li>
-                <li>Project real case</li>
-                <li>Offline / Online</li>
-            </ul>
+  <div class="item">
+    <span class="icon">🏫</span>
+    <span>Pertemuan Offline</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">💻</span>
+    <span>Bahasa Pemrogramman (PHP, Java Dasar, Python Dasar, dll)</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">👨‍🏫</span>
+    <span>Di bimbing mentor one-on-one</span>
+  </div>
+</div>
+
         </div>
+        <!-- #1 -->
+        <div class="card price-card">
+            <button class="badge-btn">REGULER</button>
+<br>
+            <h3 class="text-start" style="margin-bottom: 0;">Live Coding - Basic</h3>
+            <p class="text-start" style="font-size: 12px;">Cocok untuk yang mau instan</p>
+             <p style="text-align:start; font-size:10px; ">Rp :
+                  <span style="color:#000000;font-weight: bolder; font-size:30px;">
+                      200.000</span>
+                  / Pertemuan
+              </p>
+              <button class="choose-btn">Pilih Paket</button>
+              <div class="feature-list">
+  <div class="item">
+    <span class="icon">📅</span>
+    <span>1x Pertemuan</span>
+  </div>
 
-        <!-- CARD 5 -->
-        <div class="price-card">
-            <span class="label-basic">Rguler</span>
-            <h3>Live Coding - Basic</h3>
-            <p class="price">Rp 200.000 <span>/ pertemuan</span></p>
-            <a class="btn">Pilih Paket</a>
+  <div class="item">
+    <span class="icon">🕒</span>
+    <span>Durasi belajar 120 menit</span>
+  </div>
 
-            <ul>
-                <li>Durasi 90 menit</li>
-                <li>Tutorial langsung</li>
-                <li>Screen sharing</li>
-                <li>Materi dasar</li>
-                <li>Online</li>
-            </ul>
+  <div class="item">
+    <span class="icon">🏫</span>
+    <span>Pertemuan Offline</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">💻</span>
+    <span>Bahasa Pemrogramman (PHP, Java Dasar, Python Dasar, dll)</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">👨‍🏫</span>
+    <span>Di bimbing mentor one-on-one</span>
+  </div>
+</div>
+
         </div>
+        <!-- #2 -->
+        <div class="card price-card">
+            <button class="badge-btn">REGULER</button>
+<br>
+            <h3 class="text-start" style="margin-bottom: 0;">Live Coding - Basic</h3>
+            <p class="text-start" style="font-size: 12px;">Cocok untuk yang mau instan</p>
+             <p style="text-align:start; font-size:10px; ">Rp :
+                  <span style="color:#000000;font-weight: bolder; font-size:30px;">
+                      220.000</span>
+                  / Pertemuan
+              </p>
+              <button class="choose-btn">Pilih Paket</button>
+              <div class="feature-list">
+  <div class="item">
+    <span class="icon">📅</span>
+    <span>1x Pertemuan</span>
+  </div>
 
-        <!-- CARD 6 -->
-        <div class="price-card">
-            <span class="label-basic">Rguler</span>
-            <h3>Live Coding - Basic</h3>
-            <p class="price">Rp 220.000 <span>/ pertemuan</span></p>
-            <a class="btn">Pilih Paket</a>
+  <div class="item">
+    <span class="icon">🕒</span>
+    <span>Durasi belajar 120 menit</span>
+  </div>
 
-            <ul>
-                <li>Durasi 120 menit</li>
-                <li>Tutorial langsung</li>
-                <li>Pembelajaran intens</li>
-                <li>Tugas pribadi</li>
-                <li>Online</li>
-            </ul>
+  <div class="item">
+    <span class="icon">🏫</span>
+    <span>Pertemuan Offline</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">💻</span>
+    <span>Bahasa Pemrogramman (PHP, Java Dasar, Python Dasar, dll)</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">👨‍🏫</span>
+    <span>Di bimbing mentor one-on-one</span>
+  </div>
+</div>
+
         </div>
+        <!-- #3 -->
+        <div class="card price-card">
+            <button class="badge-btn">REGULER</button>
+<br>
+            <h3 class="text-start" style="margin-bottom: 0;">Live Coding - Advanced</h3>
+            <p class="text-start" style="font-size: 12px;">Cocok untuk yang mau instan</p>
+            <p style="text-align:start; font-size:10px; ">Rp :
+                     <span style="color:#000000;font-weight: bolder; font-size:30px;">
+                         300.000</span>
+                     / Pertemuan
+                 </p>
+                 <button class="choose-btn">Pilih Paket</button>
+                 <div class="feature-list">
+  <div class="item">
+    <span class="icon">📅</span>
+    <span>1x Pertemuan</span>
+  </div>
 
-        <!-- CARD 7 -->
-        <div class="price-card">
-            <span class="label-advanced">Reguler</span>
-            <h3>Live Coding - Advanced</h3>
-            <p class="price">Rp 300.000 <span>/ pertemuan</span></p>
-            <a class="btn">Pilih Paket</a>
+  <div class="item">
+    <span class="icon">🕒</span>
+    <span>Durasi belajar 120 menit</span>
+  </div>
 
-            <ul>
-                <li>Durasi 120 menit</li>
-                <li>Expert mentor</li>
-                <li>Project langsung</li>
-                <li>Pembahasan mendalam</li>
-                <li>Online</li>
-            </ul>
+  <div class="item">
+    <span class="icon">🏫</span>
+    <span>Pertemuan Offline</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">💻</span>
+    <span>Bahasa Pemrogramman (PHP, Java Dasar, Python Dasar, dll)</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">👨‍🏫</span>
+    <span>Di bimbing mentor one-on-one</span>
+  </div>
+</div>
+
         </div>
+        <!-- #4 -->
+        <div class="card price-card">
+            <button class="badge-btn">REGULER</button>
+<br>
+            <h3 class="text-start" style="margin-bottom: 0;">Live Coding - Advanced</h3>
+            <p class="text-start" style="font-size: 12px;">Cocok untuk yang mau instan</p>
+            <p style="text-align:start; font-size:10px; ">Rp :
+                     <span style="color:#000000;font-weight: bolder; font-size:30px;">
+                         320.000</span>
+                     / Pertemuan
+                 </p>
+                 <button class="choose-btn">Pilih Paket</button>
+                 <div class="feature-list">
+  <div class="item">
+    <span class="icon">📅</span>
+    <span>1x Pertemuan</span>
+  </div>
 
-        <!-- CARD 8 -->
-        <div class="price-card">
-            <span class="label-advanced">Reguler</span>
-            <h3>Live Coding - Advanced</h3>
-            <p class="price">Rp 320.000 <span>/ pertemuan</span></p>
-            <a class="btn">Pilih Paket</a>
+  <div class="item">
+    <span class="icon">🕒</span>
+    <span>Durasi belajar 120 menit</span>
+  </div>
 
-            <ul>
-                <li>Durasi 150 menit</li>
-                <li>Pembahasan studi kasus</li>
-                <li>Framework & API</li>
-                <li>Project real world</li>
-                <li>Online</li>
-            </ul>
+  <div class="item">
+    <span class="icon">🏫</span>
+    <span>Pertemuan Offline</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">💻</span>
+    <span>Bahasa Pemrogramman (PHP, Java Dasar, Python Dasar, dll)</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">👨‍🏫</span>
+    <span>Di bimbing mentor one-on-one</span>
+  </div>
+</div>
+
         </div>
+        <div class="card price-card">
+            <button class="badge-btn">REGULER</button>
+<br>
+            <h3 class="text-start" style="margin-bottom: 0;">Live Coding - Advanced</h3>
+            <p class="text-start" style="font-size: 12px;">Cocok untuk yang mau instan</p>
+            <p style="text-align:start; font-size:10px; ">Rp :
+                     <span style="color:#000000;font-weight: bolder; font-size:30px;">
+                         1.290.000</span>
+                     / Pertemuan
+                 </p>
+                 <button class="choose-btn">Pilih Paket</button>
+                 <div class="feature-list">
+  <div class="item">
+    <span class="icon">📅</span>
+    <span>1x Pertemuan</span>
+  </div>
 
-        <!-- CARD 9 -->
-        <div class="price-card">
-            <span class="label-basic">Reguler</span>
-            <h3>Private Coding - Bulanan</h3>
-            <p class="price">Rp 1.296.000 <span>/ bulan</span></p>
-            <a class="btn">Pilih Paket</a>
+  <div class="item">
+    <span class="icon">🕒</span>
+    <span>Durasi belajar 120 menit</span>
+  </div>
 
-            <ul>
-                <li>8x pertemuan</li>
-                <li>1 Mentor 1 Murid</li>
-                <li>Jadwal flexible</li>
-                <li>Materi bebas</li>
-                <li>Offline / Online</li>
-            </ul>
+  <div class="item">
+    <span class="icon">🏫</span>
+    <span>Pertemuan Offline</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">💻</span>
+    <span>Bahasa Pemrogramman (PHP, Java Dasar, Python Dasar, dll)</span>
+  </div>
+
+  <div class="item">
+    <span class="icon">👨‍🏫</span>
+    <span>Di bimbing mentor one-on-one</span>
+  </div>
+</div>
+
         </div>
-
     </div>
-</section>
+
+    
 
 <section id="contact" class="contact-section">
     <div class="contact-container">
@@ -598,7 +809,7 @@ ul li {
         <!-- RIGHT FORM -->
         <div class="contact-form">
 
-            <img src="https://flashsoftindonesia.com/fs-logo-vertical-white.png" class="logo">
+            <img src="flahs.png" class="logo">
 
             <input type="text" placeholder="Nama Lengkap">
 
