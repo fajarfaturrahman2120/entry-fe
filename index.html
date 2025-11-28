@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="https://flashsoftindonesia.com/fs-logo.png">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="apple-touch-icon" sizes="180x180" href="https://flashsoftindonesia.com/fs-logo.png">
+  
     <meta name="theme-color" content="#673499">
 
     <style>
@@ -155,6 +156,23 @@
         .text-start {
             text-align: left;
         }
+        .btn-pilih {
+    padding: 8px 20px;
+    border: 2px solid #7a36c4; /* Ungu */
+    background: #ffffff;
+    color: #7a36c4;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-pilih:hover {
+    background: #7a36c4;
+    color: white;
+}
+
         .badge-btn {
   background: #d9d9d9;       /* abu-abu muda */
   color: #555;               /* teks abu-abu gelap */
@@ -168,138 +186,96 @@
   float: right;
 }
 
-        .feature-list {
-  font-family: system-ui, sans-serif;
-  color: #333;
-  font-size: 15px;
-  line-height: 1.6;
-}
+    .btn {
+            background: white;
+            color: #673499;
+            padding: 10px 20px;
+            border: 1px solid #673499;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            text-decoration: none;
+        }
 
-.feature-list .item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 6px;
-}
+        .btn:hover {
+            background: #f0f0f0;
+        }
 
-.feature-list .item .icon {
-  font-size: 18px;     /* ukuran ikon */
-  margin-right: 8px;   /* jarak ikon ke teks */
-}
+        .grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            margin-top: 30px;
+        }
 
-        .choose-btn {
-  padding: 8px 20px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #6a1b9a;         /* ungu teks */
-  background: #ffffff;    /* putih */
-  border: 2px solid #b085d6; /* ungu muda */
-  border-radius: 8px;     /* rounded */
-  cursor: pointer;
-  transition: 0.2s ease;
-}
+        .card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
 
-.choose-btn:hover {
-  background: #f4e8ff;    /* ungu sangat muda */
-}
+        .section-card {
+            background: #6a1b9a;
+            padding: 3% 5%;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 0 1%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+        }
+        
+        /* CTA Section */
+        .cta {
+            background: #673499;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin: auto;
+        }
 
-.choose-btn:active {
-  transform: scale(0.96);
-}
+        .cta form {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            color: #333;
+            max-width: 512px;
+            margin: 5% auto;
+        }
 
-.contact-section {
-    background: #673499; /* ungu */
-    padding: 80px 20px;
-    color: white;
-    font-family: 'Inter', sans-serif;
-}
+        .cta input,
+        .cta select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            margin-top: 5px;
+            background: #f7f7f7;
+        }
 
-.contact-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: auto;
-    gap: 40px;
-}
+        .cta button {
+            background: #25D366;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
 
-/* ====== LEFT TEXT ====== */
-.contact-text .sub {
-    font-size: 13px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    font-weight: 700;
-    opacity: 0.8;
-}
+        .cta button:hover {
+            background: #1EBE57;
+        }
 
-.contact-text h2 {
-    font-size: 32px;
-    font-weight: 800;
-    margin: 15px 0;
-    line-height: 1.3;
-}
 
-.contact-text .desc {
-    margin-top: 10px;
-    opacity: 0.9;
-}
+        .text-white {
+            color: white;
+        }
 
-/* ====== RIGHT FORM ====== */
-.contact-form {
-    background: white;
-    width: 350px;
-    padding: 30px 25px;
-    border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact-form .logo {
-    
-    width: 130px;
-    margin: 0 auto 10px auto;
-    color: black;
-}
-
-.contact-form input,
-.contact-form select {
-    width: 100%;
-    padding: 12px 15px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 14px;
-    outline: none;
-}
-
-.contact-form button {
-    background: #25d366; /* hijau WhatsApp */
-    color: white;
-    padding: 12px;
-    text-align: center;
-    border-radius: 8px;
-    font-weight: 700;
-    border: none;
-    cursor: pointer;
-    transition: .2s;
-}
-
-.contact-form button:hover {
-    background: #1ebe5d;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 850px) {
-    .contact-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .contact-form {
-        width: 100%;
-        max-width: 350px;
-    }
-}
+        .text-start {
+            text-align: left;
+        }    
 .footer {
     width: 100%;
     background: #f3f3f3;     
@@ -339,30 +315,90 @@
     </div>
 
     <!-- Problem Section -->
-    <section class="section" id="problem">
+     <section class="section" id="problem">
+
+        <!-- Kiri: Logo -->
         <div style="text-align:center;">
-            <img src="https://flashsoftindonesia.com/fs-logo-horizontal-white.png" width="70%"
+            <img src="https://flashsoftindonesia.com/fs-logo-horizontal-white.png"
+                alt="Logo Flashsoft"
+                width="70%"
                 style="background:#673499; padding:20px; border-radius:12px;">
         </div>
 
-        <div>
-            <p><span class="highlight">Masalah Umum</span> yang Dialami Pemula</p>
-            <h2><span class="highlight">Kenapa</span> Banyak yang Gagal Belajar Coding?</h2>
+        <!-- Kanan: Text Content -->
+        <div style="flex:1; min-width:300px;">
 
+            <!-- Judul Masalah -->
+            <p style="font-size:18px; font-weight:600; color:#555;">
+                <span class="highlight">Masalah Umum</span> yang Dialami Pemula
+            </p>
+
+            <h2 style="font-size:28px; font-weight:800; color:#222;">
+                <span class="highlight">Kenapa</span> Banyak yang Gagal Belajar Coding?
+            </h2>
+
+            <!-- List Masalah -->
             <ul>
-                <li><h3>Belajar Sendiri Tanpa Arah</h3></li>
-                <li><h3>Kurang Latihan & Proyek Nyata</h3></li>
-                <li><h3>Tidak Punya Mentor</h3></li>
+                <li>
+                    <h3>
+                        <i class="fa-solid fa-triangle-exclamation icon-purple"></i>
+                        Belajar Sendiri Tanpa Arah
+                    </h3>
+                </li>
+
+                <li>
+                    <h3>
+                        <i class="fa-solid fa-code icon-purple"></i>
+                        Kurang Latihan & Proyek Nyata
+                    </h3>
+                </li>
+
+                <li>
+                    <h3>
+                        <i class="fa-solid fa-user-xmark icon-purple"></i>
+                        Tidak Punya Mentor
+                    </h3>
+                </li>
             </ul>
 
             <hr>
 
-            <h2><span class="highlight">Solusi</span> dari Flashsoft Indonesia</h2>
+            <!-- Judul Solusi -->
+            <h2 style="font-size:28px; font-weight:800; color:#222; margin-top:20px;">
+                <span class="highlight">Solusi</span> dari Flashsoft Indonesia
+            </h2>
+
+            <!-- List Solusi -->
             <ul>
-                <li><h3>Program Belajar Terarah</h3></li>
-                <li><h3>Mentor Profesional</h3></li>
-                <li><h3>Proyek Nyata</h3></li>
+                <li>
+                    <h3>
+                        <i class="fa-solid fa-compass icon-purple"></i>
+                        Program Belajar Terarah
+                    </h3>
+                </li>
+
+                <li>
+                    <h3>
+                        <i class="fa-solid fa-user-tie icon-purple"></i>
+                        Bimbingan Mentor Profesional
+                    </h3>
+                </li>
+
+                <li>
+                    <h3>
+                        <i class="fa-solid fa-laptop-code icon-purple"></i>
+                        Latihan & Proyek Nyata
+                    </h3>
+                </li>
+
+                <li>
+                    <h3>
+                        <i class="fa-solid fa-people-group icon-purple"></i>
+                        Komunitas & Dukungan Belajar
+                    </h3>
+                </li>
             </ul>
+
         </div>
     </section>
 
@@ -426,6 +462,12 @@
     </section>
 
 <!-- 5️⃣ Pricing / Offer -->
+   <p style="text-align:start; letter-spacing:0.1em; text-transform:uppercase;">
+                <span style="color:#6a1b9a; font-weight:bolder;">##</span> Pricelist
+            </p>
+   <p style="text-align:start; letter-spacing:0.1em;">Pilih
+                <span style="color:#6a1b9a; font-weight:bolder;">Program</span> yang cocok untukmu
+            </p>
     <div class="grid">
         <!-- #1 -->
         <div class="card price-card">
@@ -438,7 +480,7 @@
                       120.000</span>
                   / Pertemuan
               </p>
-              <button class="choose-btn">Pilih Paket</button>
+              <button class="btn-pilih">Pilih Paket</button>
               <div class="feature-list">
   <div class="item">
     <span class="icon">📅</span>
@@ -481,7 +523,7 @@
                       140.000</span>
                   / Pertemuan
               </p>
-              <button class="choose-btn">Pilih Paket</button>
+            <button class="btn-pilih">Pilih Paket</button>
               <div class="feature-list">
   <div class="item">
     <span class="icon">📅</span>
@@ -521,7 +563,7 @@
                       150.000</span>
                   / Pertemuan
               </p>
-              <button class="choose-btn">Pilih Paket</button>
+              <button class="btn-pilih">Pilih Paket</button>
               <div class="feature-list">
   <div class="item">
     <span class="icon">📅</span>
@@ -562,7 +604,7 @@
                       170.000</span>
                   / Pertemuan
               </p>
-              <button class="choose-btn">Pilih Paket</button>
+              <button class="btn-pilih">Pilih Paket</button>
               <div class="feature-list">
   <div class="item">
     <span class="icon">📅</span>
@@ -602,7 +644,7 @@
                       200.000</span>
                   / Pertemuan
               </p>
-              <button class="choose-btn">Pilih Paket</button>
+             <button class="btn-pilih">Pilih Paket</button>
               <div class="feature-list">
   <div class="item">
     <span class="icon">📅</span>
@@ -642,7 +684,7 @@
                       220.000</span>
                   / Pertemuan
               </p>
-              <button class="choose-btn">Pilih Paket</button>
+          <button class="btn-pilih">Pilih Paket</button>
               <div class="feature-list">
   <div class="item">
     <span class="icon">📅</span>
@@ -682,7 +724,7 @@
                          300.000</span>
                      / Pertemuan
                  </p>
-                 <button class="choose-btn">Pilih Paket</button>
+               <button class="btn-pilih">Pilih Paket</button>
                  <div class="feature-list">
   <div class="item">
     <span class="icon">📅</span>
@@ -722,7 +764,7 @@
                          320.000</span>
                      / Pertemuan
                  </p>
-                 <button class="choose-btn">Pilih Paket</button>
+                  <button class="btn-pilih">Pilih Paket</button>
                  <div class="feature-list">
   <div class="item">
     <span class="icon">📅</span>
@@ -761,7 +803,7 @@
                          1.290.000</span>
                      / Pertemuan
                  </p>
-                 <button class="choose-btn">Pilih Paket</button>
+                 <button class="btn-pilih">Pilih Paket</button>
                  <div class="feature-list">
   <div class="item">
     <span class="icon">📅</span>
@@ -794,37 +836,64 @@
 
     
 
-<section id="contact" class="contact-section">
-    <div class="contact-container">
+  <section class="cta" id="contact">
+        <div class="grid">
+            <div style="flex: 1;padding: 0 10%;">
+                <!-- Subjudul -->
+                <p style="text-align:start; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:8px;">
+                    <span style="color:white; font-weight:bolder;">##</span> Kontak Kami
+                </p>
 
-        <!-- LEFT TEXT -->
-        <div class="contact-text">
-            <p class="sub">## KONTAK KAMI</p>
-            <h2>Mulai Langkah Pertamamu <br> Menjadi Programmer Hebat!</h2>
-            <p class="desc">
-                Bergabung bersama ratusan siswa yang sudah belajar di Flashsoft Programming School.
-            </p>
+                <!-- Judul utama -->
+                <h2 style="font-size:36px; margin-bottom:20px; text-align:start; font-weight:lighter; line-height:1.3;">
+                    Mulai Langkah Pertamamu Menjadi Programmer <span
+                        style="color:white; font-weight:bolder;">Hebat!</span>
+                </h2>
+                <p class="text-start">Bergabung bersama ratusan siswa yang sudah belajar di Flashsoft Programming
+                    School.</p>
+            </div>
+
+            <!-- FORM WHATSAPP -->
+            <div style="flex: 1;">
+                <img src="https://flashsoftindonesia.com/fs-logo-horizontal-white.png" alt="Logo Flashsoft" width="50%">
+                <form id="waForm" onsubmit="sendToWhatsApp(event)">
+                    <label>Nama Lengkap</label><br>
+                    <input type="text" id="name" placeholder="Masukkan nama" required><br><br>
+
+                    <label>Program yang diminati</label><br>
+                    <select id="program" required>
+                        <option value="">-- Pilih Program --</option>
+                        <option>Private Coding</option>
+                        <option>Live Coding</option>
+                        <option>Kelas CoolYeah</option>
+                        <option>Bootcamp</option>
+                    </select><br><br>
+
+                    <button type="submit">Kirim ke WhatsApp</button>
+                </form>
+            </div>
         </div>
+    </section>
 
-        <!-- RIGHT FORM -->
-        <div class="contact-form">
+    <script>
+        function sendToWhatsApp(e) {
+            e.preventDefault();
 
-            <img src="flahs.png" class="logo">
+            const name = document.getElementById("name").value.trim();
+            const program = document.getElementById("program").value;
 
-            <input type="text" placeholder="Nama Lengkap">
+            // Nomor admin Flashsoft
+            const adminNumber = "6285363834829"; // ganti dengan nomor WA admin kamu
 
-            <select>
-                <option>Program yang diminati</option>
-                <option>Private Coding</option>
-                <option>Live Coding</option>
-                <option>Bootcamp</option>
-            </select>
+            const message = `Halo Flashsoft! Saya ingin mendaftar.%0A
+    Nama: ${name}%0A
+    Program: ${program}%0A
+    Mohon info lebih lanjut ya!`;
 
-            <button>Kirim ke WhatsApp</button>
-        </div>
-        
-    </div>
-</section>
+            const waLink = `https://wa.me/${adminNumber}?text=${message}`;
+            window.open(waLink, "_blank");
+        }
+    </script>
 <footer class="footer">
     <p>© 2025 Flashsoft Indonesia — Semua Hak Dilindungi.</p>
 </footer>
