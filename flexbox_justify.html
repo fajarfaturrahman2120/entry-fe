@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section Benefit</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f3f6;
+        }
+
+        /* Background ungu utama */
+        .benefit-wrapper {
+            background: #6f1d9b; /* ungu seperti gambar */
+            padding: 40px 0;
+        }
+
+        /* Container isi */
+        .benefit-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        /* Kotak kiri (merah) */
+        .benefit-left {
+            background: #e60000;
+            color: #ffffff;
+            padding: 30px;
+            width: 55%;
+            border-radius: 4px;
+        }
+
+        .benefit-left h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .benefit-left div {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        /* Kotak kanan (biru) */
+        .benefit-right {
+            background: #0a2cff;
+            width: 35%;
+            padding: 30px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .benefit-right img {
+            width: 180px;
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            .benefit-container {
+                flex-direction: column;
+            }
+
+            .benefit-left,
+            .benefit-right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="benefit-wrapper">
+    <div class="benefit-container">
+
+        <!-- Kiri -->
+        <div class="benefit-left">
+            <h2>Mengapa Memilih Kami</h2>
+            <div>🚀 Belajar bisa dari nol — cocok untuk pemula tanpa pengalaman coding.</div>
+            <div>💡 Materi selalu update mengikuti tren teknologi industri.</div>
+            <div>🎯 Pendekatan belajar berbasis proyek (project-based learning).</div>
+            <div>🤝 Akses komunitas dan mentoring pribadi dari para ahli.</div>
+        </div>
+
+        <!-- Kanan -->
+        <div class="benefit-right">
+            <img src="https://flashsoftindonesia.com/fs-logo-vertical-white.png" alt="Flashsoft Logo">
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+
+  display: grid;
+  grid-template-rows: 60px 1fr 40px;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas:
+    "nav nav"
+    "side main"
+    "footer footer";
+  height: 100vh;
+}
+
+/* Navbar */
+nav {
+  grid-area: nav;
+  background: #fafafa;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+
+  display: flex;
+  align-items: center;
+}
+
+/* Sidebar */
+aside {
+  grid-area: side;
+  background: #f0f0f0;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+aside a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 6px 0;
+}
+aside a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  grid-area: main;
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* Footer */
+footer {
+  grid-area: footer;
+  background: #fafafa;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+

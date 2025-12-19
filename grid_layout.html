@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimoni</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+        }
+
+        /* Container grid */
+        .testimoni-container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        /* Card */
+        .testimoni-card {
+            background: #ffffff;
+            padding: 25px 28px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+        }
+
+        .testimoni-card p {
+            margin: 0 0 15px;
+            font-style: italic;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .testimoni-card span {
+            font-weight: bold;
+            color: #222;
+        }
+
+        /* Agar baris bawah hanya 2 card */
+        .testimoni-card.span-2 {
+            grid-column: span 1;
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .testimoni-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .testimoni-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .program-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.program-card {
+    border: 2px solid #7a2bbf;
+    border-radius: 10px;
+    padding: 18px 20px;
+    background: #ffffff;
+}
+
+.program-card h4 {
+    margin: 0 0 6px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111;
+}
+
+.program-card p {
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .program-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .program-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+    </style>
+</head>
+
+<body>
+
+<div class="testimoni-container">
+
+    <div class="testimoni-card">
+        <p>
+            “Awalnya saya tidak tahu apa-apa tentang coding.
+            Sekarang saya sudah bisa membuat website sendiri!”
+        </p>
+        <span>– Intan, Peserta Bootcamp Web Beginner</span>
+    </div>
+
+    <div class="testimoni-card">
+        <p>
+            “Mentornya sabar banget dan materinya mudah dipahami.
+            Belajar di Flashsoft bikin semangat terus!”
+        </p>
+        <span>– Rafi, Siswa Private Coding</span>
+    </div>
+
+    <div class="testimoni-card">
+        <p>
+            “Setelah ikut kelas, saya berhasil diterima magang di startup teknologi.”
+        </p>
+        <span>– Dina, Alumni Live Coding React JS</span>
+    </div>
+
+    <div class="testimoni-card">
+        <p>
+            “Setelah ikut kelas, saya berhasil diterima magang di startup teknologi.”
+        </p>
+        <span>– Alex, Alumni Live Coding React JS</span>
+    </div>
+
+    <div class="testimoni-card">
+        <p>
+            “Setelah ikut kelas, saya berhasil diterima magang di startup teknologi.”
+        </p>
+        <span>– El, Alumni Live Coding React JS</span>
+    </div>
+
+</div>
+<section class="program-section">
+
+    <div class="program-grid">
+
+        <div class="program-card">
+            <h4>Private Coding - Basic</h4>
+            <p>Cocok untuk yang mau belajar</p>
+        </div>
+
+        <div class="program-card">
+            <h4>Private Coding - Basic</h4>
+            <p>Cocok untuk yang mau belajar</p>
+        </div>
+
+        <div class="program-card">
+            <h4>Private Coding - Advanced</h4>
+            <p>Cocok untuk yang mau belajar</p>
+        </div>
+
+        <div class="program-card">
+            <h4>Private Coding - Advanced</h4>
+            <p>Cocok untuk yang mau belajar</p>
+        </div>
+
+        <div class="program-card">
+            <h4>Live Coding - Basic</h4>
+            <p>Cocok untuk yang mau instan</p>
+        </div>
+
+        <div class="program-card">
+            <h4>Live Coding - Basic</h4>
+            <p>Cocok untuk yang mau instan</p>
+        </div>
+
+        <div class="program-card">
+            <h4>Live Coding - Advanced</h4>
+            <p>Cocok untuk yang mau instan</p>
+        </div>
+
+        <div class="program-card">
+            <h4>Live Coding - Advanced</h4>
+            <p>Cocok untuk yang mau instan</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+</body>
+</html>

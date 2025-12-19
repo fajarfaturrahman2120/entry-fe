@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+<body>
+    <!--soal 3 username,email,password-->
+    <form action="" method="POST">
+        <!-- Username -->
+        <label for="username">Username:</label><br>
+        <input 
+            type="text" 
+            id="username" 
+            name="username" 
+            placeholder="Masukkan username"
+            required
+        ><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Masukkan email"
+            required
+        ><br><br>
+
+        <!-- Password -->
+        <label for="password">Password:</label><br>
+        <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="Masukkan password"
+            required
+        ><br><br>
+
+        <!--soal 4 jenis kelamin-->
+
+        <!-- Radio Button Jenis Kelamin -->
+        <label>Jenis Kelamin:</label><br>
+        <input 
+            type="radio" 
+            id="laki" 
+            name="jenis_kelamin" 
+            value="Laki-laki" 
+            required
+        >
+        <label for="laki">Laki-laki</label><br>
+
+        <input 
+            type="radio" 
+            id="perempuan" 
+            name="jenis_kelamin" 
+            value="Perempuan"
+        >
+        <label for="perempuan">Perempuan</label><br><br>
+
+        <!--soal 5 hobi-->
+
+        <!-- Checkbox Hobi -->
+        <label>Hobi:</label><br>
+        <input 
+            type="checkbox" 
+            id="ngoding" 
+            name="hobi[]" 
+            value="Ngoding"
+        >
+        <label for="ngoding">Ngoding</label><br>
+
+        <input 
+            type="checkbox" 
+            id="membaca" 
+            name="hobi[]" 
+            value="Membaca"
+        >
+        <label for="membaca">Membaca</label><br>
+
+        <input 
+            type="checkbox" 
+            id="olahraga" 
+            name="hobi[]" 
+            value="Olahraga"
+        >
+        <label for="olahraga">Olahraga</label><br><br>
+
+        <!--soal 6 alamat & jurusan-->
+
+        <!-- Textarea Alamat -->
+        <label for="alamat">Alamat Lengkap:</label><br>
+        <textarea 
+            id="alamat" 
+            name="alamat" 
+            placeholder="Masukkan alamat lengkap"
+            rows="4"
+            cols="30"
+            required
+        ></textarea><br><br>
+
+        <!-- Select Jurusan -->
+        <label for="jurusan">Jurusan:</label><br>
+        <select id="jurusan" name="jurusan" required>
+            <option value="">-- Pilih Jurusan --</option>
+            <option value="Informatika">Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Teknik Komputer">Teknik Komputer</option>
+        </select><br><br>
+
+        <!-- Tombol -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    
+</body>
+</html>

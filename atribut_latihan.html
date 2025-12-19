@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pesan</title>
+</head>
+<body>
+
+    <h1>Formulir Pesan</h1>
+
+    <form action="submit_pesan.php" method="POST">
+        
+        <label>
+            Nama:<br>
+            <input type="text" name="nama" placeholder="Masukkan nama lengkap" required>
+        </label>
+        <br><br>
+
+        <label>
+            Email:<br>
+            <input type="email" name="email" placeholder="Masukkan email" required>
+        </label>
+        <br><br>
+
+        <label>
+            Subjek:<br>
+            <input type="text" name="subjek" value="Pertanyaan">
+        </label>
+        <br><br>
+
+        <label>
+            Pesan:<br>
+            <textarea name="pesan" rows="5" cols="50" required></textarea>
+        </label>
+        <br><br>
+
+        <button type="submit">Kirim</button>
+    </form>
+
+</body>
+</html>
